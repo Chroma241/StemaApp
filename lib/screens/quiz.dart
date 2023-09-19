@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:stema/constants.dart';
-import 'package:stema/screens/certification.dart';
+import 'package:steam/constants.dart';
+import 'package:steam/screens/certification.dart';
 
 class QuizPage extends StatefulWidget {
   const QuizPage({Key? key}) : super(key: key);

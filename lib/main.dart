@@ -3,8 +3,8 @@
 import 'package:flutter/material.dart';
 import 'package:hive/hive.dart';
 import 'package:hive_flutter/hive_flutter.dart';
-import 'package:stema/models/course_model.dart';
-import 'package:stema/screens/splash_screen.dart';
+import 'package:steam/models/course_model.dart';
+import 'package:steam/screens/splash_screen.dart';
 import 'models/user.dart';
 
 void main() async {
@@ -21,52 +21,52 @@ void main() async {
       Course(
           title: 'Chap 1',
           pathFR: 'pdf/fr/sample1.pdf',
-          pathEN: 'pdf/en/sample1.pdf',
+          pathEN: 'pdf/en/CHAP1.pdf',
           isFinish: false),
       Course(
           title: 'Chap 2',
           pathFR: 'pdf/fr/sample2.pdf',
-          pathEN: 'pdf/en/sample2.pdf',
+          pathEN: 'pdf/en/CHAP2.pdf',
           isFinish: false),
       Course(
           title: 'Chap 3',
           pathFR: 'pdf/fr/sample3.pdf',
-          pathEN: 'pdf/en/sample3.pdf',
+          pathEN: 'pdf/en/CHAP3.pdf',
           isFinish: false),
       Course(
           title: 'Chap 4',
           pathFR: 'pdf/fr/sample4.pdf',
-          pathEN: 'pdf/en/sample4.pdf',
+          pathEN: 'pdf/en/CHAP4.pdf',
           isFinish: false),
       Course(
           title: 'Chap 5',
           pathFR: 'pdf/fr/sample5.pdf',
-          pathEN: 'pdf/en/sample5.pdf',
+          pathEN: 'pdf/en/CHAP5.pdf',
           isFinish: false),
       Course(
           title: 'Chap 6',
           pathFR: 'pdf/fr/sample6.pdf',
-          pathEN: 'pdf/en/sample6.pdf',
+          pathEN: 'pdf/en/CHAP6.pdf',
           isFinish: false),
       Course(
           title: 'Chap 7',
           pathFR: 'pdf/fr/sample7.pdf',
-          pathEN: 'pdf/en/sample7.pdf',
+          pathEN: 'pdf/en/CHAP7.pdf',
           isFinish: false),
       Course(
           title: 'Chap 8',
           pathFR: 'pdf/fr/sample8.pdf',
-          pathEN: 'pdf/en/sample8.pdf',
+          pathEN: 'pdf/en/CHAP8.pdf',
           isFinish: false),
       Course(
           title: 'Chap 9',
           pathFR: 'pdf/fr/sample9.pdf',
-          pathEN: 'pdf/en/sample9.pdf',
+          pathEN: 'pdf/en/CHAP9.pdf',
           isFinish: false),
       Course(
           title: 'Chap 10',
           pathFR: 'pdf/fr/sample10.pdf',
-          pathEN: 'pdf/en/sample10.pdf',
+          pathEN: 'pdf/en/CHAP10.pdf',
           isFinish: false),
     ];
 
@@ -96,7 +96,7 @@ class _MyAppState extends State<MyApp> {
     final box = Hive.box<User>('userData');
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'STEMA APP',
+      title: 'STEAM APP',
       theme: Theme.of(context).copyWith(
         colorScheme: Theme.of(context).colorScheme.copyWith(
               primary: Color.fromARGB(255, 255, 122, 27),

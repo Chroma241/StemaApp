@@ -1,7 +1,7 @@
 // ignore_for_file: prefer_const_constructors, unnecessary_null_comparison, sort_child_properties_last
 
 import 'package:flutter/material.dart';
-import 'package:stema/constants.dart';
+import 'package:steam/constants.dart';
 import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
 
 class Introduction extends StatefulWidget {

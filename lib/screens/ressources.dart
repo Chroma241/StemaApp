@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:stema/constants.dart';
+import 'package:steam/constants.dart';
 
 class InfoPage extends StatefulWidget {
   const InfoPage({super.key});

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:stema/constants.dart';
-import 'package:stema/screens/introduction.dart';
+import 'package:steam/constants.dart';
+import 'package:steam/screens/introduction.dart';
 import 'ressources.dart';
 import 'pdf.dart';
 import 'account.dart';
