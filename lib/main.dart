@@ -20,53 +20,53 @@ void main() async {
     final coursesToAdd = [
       Course(
           title: 'Chap 1',
-          pathFR: 'pdf/fr/sample1.pdf',
-          pathEN: 'pdf/en/CHAP1.pdf',
+          pathFR: 'pdf/fr/Chap1.pdf',
+          pathEN: 'pdf/en/Chap1.pdf',
           isFinish: false),
       Course(
           title: 'Chap 2',
-          pathFR: 'pdf/fr/sample2.pdf',
-          pathEN: 'pdf/en/CHAP2.pdf',
+          pathFR: 'pdf/fr/Chap2.pdf',
+          pathEN: 'pdf/en/Chap2.pdf',
           isFinish: false),
       Course(
           title: 'Chap 3',
-          pathFR: 'pdf/fr/sample3.pdf',
-          pathEN: 'pdf/en/CHAP3.pdf',
+          pathFR: 'pdf/fr/Chap3.pdf',
+          pathEN: 'pdf/en/Chap3.pdf',
           isFinish: false),
       Course(
           title: 'Chap 4',
-          pathFR: 'pdf/fr/sample4.pdf',
-          pathEN: 'pdf/en/CHAP4.pdf',
+          pathFR: 'pdf/fr/Chap4.pdf',
+          pathEN: 'pdf/en/Chap4.pdf',
           isFinish: false),
       Course(
           title: 'Chap 5',
-          pathFR: 'pdf/fr/sample5.pdf',
-          pathEN: 'pdf/en/CHAP5.pdf',
+          pathFR: 'pdf/fr/Chap5.pdf',
+          pathEN: 'pdf/en/Chap5.pdf',
           isFinish: false),
       Course(
           title: 'Chap 6',
-          pathFR: 'pdf/fr/sample6.pdf',
-          pathEN: 'pdf/en/CHAP6.pdf',
+          pathFR: 'pdf/fr/Chap6.pdf',
+          pathEN: 'pdf/en/Chap6.pdf',
           isFinish: false),
       Course(
           title: 'Chap 7',
-          pathFR: 'pdf/fr/sample7.pdf',
-          pathEN: 'pdf/en/CHAP7.pdf',
+          pathFR: 'pdf/fr/Chap7.pdf',
+          pathEN: 'pdf/en/Chap7.pdf',
           isFinish: false),
       Course(
           title: 'Chap 8',
-          pathFR: 'pdf/fr/sample8.pdf',
-          pathEN: 'pdf/en/CHAP8.pdf',
+          pathFR: 'pdf/fr/Chap8.pdf',
+          pathEN: 'pdf/en/Chap8.pdf',
           isFinish: false),
       Course(
           title: 'Chap 9',
-          pathFR: 'pdf/fr/sample9.pdf',
-          pathEN: 'pdf/en/CHAP9.pdf',
+          pathFR: 'pdf/fr/Chap9.pdf',
+          pathEN: 'pdf/en/Chap9.pdf',
           isFinish: false),
       Course(
           title: 'Chap 10',
-          pathFR: 'pdf/fr/sample10.pdf',
-          pathEN: 'pdf/en/CHAP10.pdf',
+          pathFR: 'pdf/fr/Chap10.pdf',
+          pathEN: 'pdf/en/Chap10.pdf',
           isFinish: false),
     ];
 

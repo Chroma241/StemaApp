@@ -28,6 +28,7 @@ class AccountPage extends StatelessWidget {
               fontSize: 30),
         ),
         backgroundColor: Colors.white,
+        iconTheme: IconThemeData(color: Colors.black87),
         toolbarHeight: 100,
         elevation: 0,
         actions: [
@@ -181,22 +182,23 @@ class AccountPage extends StatelessWidget {
                     height: 20,
                   ),
                   Visibility(
-                      visible: isVisible,
-                      child: SizedBox(
-                        width: 200,
-                        height: 50,
-                        child: ElevatedButton(
-                          child: Text("Quiz"),
-                          onPressed: () {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) => QuizPage(),
-                              ),
-                            );
-                          },
-                        ),
-                      )),
+                    visible: isVisible,
+                    child: SizedBox(
+                      width: 200,
+                      height: 50,
+                      child: ElevatedButton(
+                        child: Text("Quiz"),
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => QuizPage(),
+                            ),
+                          );
+                        },
+                      ),
+                    ),
+                  ),
                 ],
               ),
             );
