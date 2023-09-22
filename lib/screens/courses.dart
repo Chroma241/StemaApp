@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:steam/constants.dart';
+import 'package:steam/screens/exercise.dart';
 import 'package:steam/screens/introduction.dart';
 import 'ressources.dart';
 import 'pdf.dart';
@@ -138,6 +139,7 @@ class _ListCoursesState extends State<ListCourses> {
               )),
             ),
           ),
+
           Expanded(
             child: CustomScrollView(
               slivers: <Widget>[
@@ -183,6 +185,51 @@ class _ListCoursesState extends State<ListCourses> {
                   ),
                 ),
               ],
+            ),
+          ),
+          GestureDetector(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => Exercise(),
+                ),
+              );
+            },
+            child: Container(
+              height: 100,
+              margin: EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+
+              decoration: BoxDecoration(
+                color: mainColor, // Couleur d'arrière-plan du Container
+                borderRadius:
+                    BorderRadius.circular(10.0), // Ajoutez un BorderRadius
+              ), // Couleur d'arrière-plan du Container
+              child: Center(
+                  child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    "Exercices / Exercises".toUpperCase(),
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                        fontFamily: "Nexa-Bold"),
+                  ),
+                  SizedBox(
+                    width: 20,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(bottom: 12),
+                    child: Icon(
+                      Icons.arrow_forward,
+                      size: 40,
+                      color: Colors.white,
+                    ),
+                  )
+                ],
+              )),
             ),
           ),
         ],
