@@ -16,11 +16,9 @@ class _ExerciseState extends State<Exercise> {
   String dropdownValue = 'fr';
   String pathFR = 'pdf/fr/Exercices.pdf';
   String pathEN = 'pdf/en/Exercises.pdf';
-  String titleFR = 'Cahier exercices';
-  String titleEN = 'exercises book';
+
   // Définissez une variable pour stocker le chemin du PDF en fonction de la langue
   String selectedPath = '';
-  String selectedTitle = '';
 
   @override
   void initState() {
