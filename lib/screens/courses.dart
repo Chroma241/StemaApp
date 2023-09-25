@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:steam/constants.dart';
 import 'package:steam/screens/exercise.dart';
 import 'package:steam/screens/introduction.dart';
-import 'ressources.dart';
+import 'ressourcesFR.dart';
 import 'pdf.dart';
 import 'account.dart';
 import '../models/user.dart'; // Importez la classe User
@@ -31,7 +31,7 @@ class _HomepageState extends State<Homepage> {
     return Scaffold(
       body: [
         ListCourses(),
-        InfoPage(),
+        RessourcesFR(),
         AccountPage(),
       ][_currentIndex],
       bottomNavigationBar: BottomNavigationBar(
