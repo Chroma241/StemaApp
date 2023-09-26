@@ -42,7 +42,6 @@ dependencies:
   open_file: ^3.3.2
   image: ^4.0.17
   auto_size_text: ^3.0.0
-  flutter_localization: ^0.1.14
   flutter_bloc: ^8.1.3
 
 

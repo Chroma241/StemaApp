@@ -81,7 +81,7 @@ Future<void> generatePDF(String firstName, String lastName) async {
 
     // Chargez l'image depuis le répertoire "assets"
     final ByteData assetByteData = await rootBundle.load(
-        'asset/images/certificate.png'); // Correction du chemin de l'actif
+        'asset/images/GabTrotterCertificate.png'); // Correction du chemin de l'actif
     final List<int> assetBytes = assetByteData.buffer.asUint8List();
     final img.Image image = img.decodeImage(Uint8List.fromList(assetBytes))!;
 
