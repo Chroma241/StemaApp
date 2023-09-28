@@ -80,7 +80,7 @@ void main() async {
     print("Course Box Exists"); // Correction du message
   }
 
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatefulWidget {
