@@ -38,40 +38,37 @@ class _RessourcesFRState extends State<RessourcesFR> {
         toolbarHeight: 80,
         elevation: 1,
         actions: [
-          Container(
-            color: mainColor,
-            padding: EdgeInsets.only(right: 10.0),
-            child: DropdownButton(
-              icon: Icon(
-                Icons.arrow_drop_down,
-                size: 20,
-                color: Colors.white,
-              ),
-              items: [
-                DropdownMenuItem(
-                  value: Language.French,
-                  child: Image.asset('icons/flags/png/fr.png',
-                      width: 25, package: 'country_icons'),
-                  onTap: () {
-                    setState(() {
-                      currentLanguage = Language.French;
-                    });
-                  },
-                ),
-                DropdownMenuItem(
-                  value: Language.English,
-                  child: Image.asset('icons/flags/png/gb.png',
-                      width: 25, package: 'country_icons'),
-                  onTap: () {
-                    setState(() {
-                      currentLanguage = Language.English;
-                    });
-                  },
-                ),
-              ],
-              onChanged: (value) => setState(() {}),
+          DropdownButton(
+            icon: Icon(
+              Icons.arrow_drop_down,
+              size: 45,
+              color: mainColor,
             ),
-          )
+            padding: EdgeInsets.all(10),
+            items: [
+              DropdownMenuItem(
+                value: Language.French,
+                child: Image.asset('icons/flags/png/fr.png',
+                    width: 25, package: 'country_icons'),
+                onTap: () {
+                  setState(() {
+                    currentLanguage = Language.French;
+                  });
+                },
+              ),
+              DropdownMenuItem(
+                value: Language.English,
+                child: Image.asset('icons/flags/png/gb.png',
+                    width: 25, package: 'country_icons'),
+                onTap: () {
+                  setState(() {
+                    currentLanguage = Language.English;
+                  });
+                },
+              ),
+            ],
+            onChanged: (value) => setState(() {}),
+          ),
         ],
       ),
       body: SingleChildScrollView(
