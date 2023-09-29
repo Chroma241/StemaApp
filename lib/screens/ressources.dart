@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:steam/constants.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:open_url/open_url.dart';
+import 'package:url_launcher/url_launcher_string.dart';
 
 enum Language { French, English }
 
@@ -540,7 +542,7 @@ class _RessourcesFRState extends State<RessourcesFR> {
                       const url =
                           'https://www.steampoweredfamily.com/'; // Remplacez par l'URL que vous souhaitez ouvrir.
                       if (await canLaunch(url)) {
-                        await launch(url);
+                        await launch(url, forceWebView: true);
                       } else {
                         throw 'Impossible d\'ouvrir l\'URL : $url';
                       }
@@ -566,9 +568,10 @@ class _RessourcesFRState extends State<RessourcesFR> {
                   ElevatedButton(
                     onPressed: () async {
                       const url =
-                          'https://www.makematic.com/'; // Remplacez par l'URL que vous souhaitez ouvrir.
-                      if (await canLaunch(url)) {
-                        await launch(url);
+                          'https://makematic.com'; // Remplacez par l'URL que vous souhaitez ouvrir.
+                      if (await canLaunch(url.toString())) {
+                        await launchUrlString(url.toString(),
+                            mode: LaunchMode.externalApplication);
                       } else {
                         throw 'Impossible d\'ouvrir l\'URL : $url';
                       }

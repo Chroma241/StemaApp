@@ -187,7 +187,7 @@ class _ListCoursesState extends State<ListCourses> {
               ],
             ),
           ),
-          GestureDetector(
+          /*GestureDetector(
             onTap: () {
               Navigator.push(
                 context,
@@ -231,7 +231,7 @@ class _ListCoursesState extends State<ListCourses> {
                 ],
               )),
             ),
-          ),
+          ),*/
         ],
       ),
     );

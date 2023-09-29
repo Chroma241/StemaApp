@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, unused_local_variable
 
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
@@ -8,6 +8,7 @@ import '../models/user.dart';
 import 'update_account.dart';
 import '/models/course_model.dart';
 import 'quiz.dart';
+import 'package:animated_emoji/animated_emoji.dart';
 
 class AccountPage extends StatelessWidget {
   const AccountPage({Key? key}) : super(key: key);
@@ -182,7 +183,8 @@ class AccountPage extends StatelessWidget {
                     height: 20,
                   ),
                   Visibility(
-                    visible: isVisible,
+                    visible:
+                        false, //Changer en isVisible pour rendre le bouton dynamique
                     child: SizedBox(
                       width: 200,
                       height: 50,

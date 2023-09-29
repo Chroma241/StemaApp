@@ -1,9 +1,10 @@
-// ignore_for_file: prefer_const_constructors, unnecessary_null_comparison, sort_child_properties_last
+// ignore_for_file: prefer_const_constructors, unnecessary_null_comparison, sort_child_properties_last, use_build_context_synchronously
 
 import 'package:flutter/material.dart';
 import 'package:hive/hive.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:steam/constants.dart';
+import 'package:steam/screens/ressources.dart';
 import '/models/user.dart';
 import '/models/course_model.dart';
 import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
@@ -23,6 +24,7 @@ class PdfCode extends StatefulWidget {
 class _PdfCodeState extends State<PdfCode> {
   String lang = 'fr';
   String dropdownValue = 'fr';
+  Language currentLanguage = Language.French;
 
   // Définissez une variable pour stocker le chemin du PDF en fonction de la langue
   String selectedPath = '';
@@ -124,7 +126,8 @@ class _PdfCodeState extends State<PdfCode> {
                   });
                 }
               },
-              child: Text('Fini / Complete',style:TextStyle(color:Colors.white)),
+              child: Text('Fini / Complete',
+                  style: TextStyle(color: Colors.white)),
               style: TextButton.styleFrom(backgroundColor: mainColor),
             ),
           ),

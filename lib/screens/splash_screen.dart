@@ -80,7 +80,7 @@ class _SplashScreenState extends State<SplashScreen>
                   padding: const EdgeInsets.symmetric(horizontal: 10.0),
                   child: Image.asset(
                     "asset/images/PARTNERS-TRANSPARENT.png",
-                    width: 380,
+                    width: 330,
                   ),
                 ),
               ],
